@@ -16,13 +16,13 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     searchAndScrappTheExchangeCOP_VESRate()
     async function searchAndScrappTheExchangeCOP_VESRate () {
-        console.time()
+        
   try {
       console.log(`Test ${TimesExcecuted}`)
   await page.goto('https://p2p.binance.com/es-LA/trade/sell/USDT', {
     waitUntil: 'networkidle2',
   });
-  // // // await page.pdf({ path: 'hn.pdf', format: 'a4' });
+  
     async function CambiarDivisa(moneda = "COP") {
       const Currency_Table_Selector= "#C2Cfiatfilter_searhbox_fiat > div.css-17ehxay > input"
       await page.click(Currency_Table_Selector)
@@ -75,7 +75,7 @@ const TASA = parseInt(ValorPesos) / parseInt(ValorVES);
 //  await RUTA_TASA.update({tasa: TASA.toFixed(6)});
 exports.TASA = TASA.toFixed(6);
 
-console.timeEnd()
+
 }catch(error){console.error(error)}
 setTimeout(() => {
      TimesExcecuted = TimesExcecuted + 1
