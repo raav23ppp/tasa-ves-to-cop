@@ -1,0 +1,11 @@
+---
+application:
+  name: "tasa-ves-to-cop"
+  project: "tasa-ves-cop"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-tasa-ves-to-cop"
+  routes:
+  - application_name: "tasa-ves-to-cop"
+    paths:
+    - "/*"
