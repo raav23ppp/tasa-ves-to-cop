@@ -1,17 +1,14 @@
 {
   "name": "thal",
   "version": "1.0.0",
-  "description": "pupet",
-  "main": "index.js",
+  "description": "pupetter",
+  "main": "botTg",
   "scripts": {
-    "start": "node index.js"
+    "start":"node botTg.js"
   },
   "keywords": [
-    "pupe"
+    "pupetter"
   ],
-   "engines": {
-    "node": "15.4.0"
-    },
   "author": "yo",
   "license": "ISC",
   "dependencies": {
